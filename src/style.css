@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", serif;
+}
+
+:root{
+    /*Primary*/
+
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+    
+    /*Neutral*/
+    
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --Very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+body{
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--Very-light-gray);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.divComentario{
+    background: var(--White);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.dataDeCriaçao{
+    color: var(--Grayish-Blue);
+}
+
+.divDoPerfil{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nomeUsuario{
+    font-size: 24px;
+}
+
+.perfilEScore{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divDoScore{
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.score{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Moderate-blue);
+}
+
+.perfilEComentario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfilECompartilhamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario{
+    color: var(--Dark-blue);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.compartilhamento{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--Moderate-blue);
+    font-size: 20px;
+    background-color: var(--White);
+}
