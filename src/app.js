@@ -22,13 +22,13 @@ async function getProduct() {
                             
                             </div>
                             <div class="perfilEComentario">
-                                <div class="perfilECompartilhamento">
+                                <div class="perfilEResponder">
                                     <div class="divDoPerfil">
                                         <img src=${comment.user.image.png} />
                                         <p class="nomeUsuario"><strong>${comment.user.username}</strong></p>
                                         <p class="dataDeCriaçao">${comment.createdAt}</p>
                                     </div>
-                                    <button class="compartilhamento">
+                                    <button class="responder">
                                         <img src="../images/icon-reply.svg" alt="icon de compartilhamento" />
                                         Reply
                                     </button>

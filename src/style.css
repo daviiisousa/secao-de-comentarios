@@ -84,7 +84,7 @@ button{
     gap: 20px;
 }
 
-.perfilECompartilhamento{
+.perfilEResponder{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@ button{
     text-align: left;
 }
 
-.compartilhamento{
+.responder{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -105,4 +105,39 @@ button{
     color: var(--Moderate-blue);
     font-size: 20px;
     background-color: var(--White);
+}
+
+.formComentario{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+
+.imgPerfil{
+    object-fit: contain;
+}
+
+.textComentario{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--Grayish-Blue);
+    resize: none;
+}
+
+.textComentario::placeholder{
+    text-align: start;
+}
+
+.textComentario:focus{
+    border: 1px solid var(--Moderate-blue);
+    outline: none;
+}
+
+.btnEnviar{
+    background-color: var(--Moderate-blue);
+    color: var(--White);
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
 }
