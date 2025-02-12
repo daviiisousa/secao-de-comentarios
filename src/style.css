@@ -29,6 +29,7 @@ body{
     max-width: 800px;
     margin: 50px auto;
     background-color: var(--Very-light-gray);
+    height: 130vh;
 }
 
 button{
@@ -140,4 +141,14 @@ button{
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 8px;
+}
+
+.arrobaUsuario{
+    color: var(--Moderate-blue);
+    font-weight: 700;
+}
+
+.respostas{
+    max-width: 700px;
+    margin-left: auto;
 }
