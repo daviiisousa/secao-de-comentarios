@@ -1,7 +1,7 @@
 const campo = document.getElementById("comentarios");
-const respostas = document.getElementById("respostas")
+const respostas = document.getElementById("respostas");
 
-async function getProduct() {
+async function getComments() {
   try {
     const result = await fetch("../src/data/data.json");
     if (!result.ok) throw new Error("Erro ao carregar o arquivo JSON");
@@ -44,7 +44,9 @@ async function getProduct() {
       )
       .join("");
 
-      respostas.innerHTML = data.comments[1].replies.map((resposta) => `              
+    respostas.innerHTML = data.comments[1].replies
+      .map(
+        (resposta) => `              
                     <div class="divComentario respostas">
                         <div class="perfilEScore">
                             <div class="divDoScore">
@@ -73,11 +75,12 @@ async function getProduct() {
                         </div>
                     </div>                 
                 </div>`
-      ).join("")
+      )
+      .join("");
   } catch (error) {
     console.error("Erro ao buscar os dados:", error);
     campo.innerHTML = "<p>Erro ao carregar os comentários.</p>";
   }
 }
 
-getProduct();
+getComments();
